@@ -2,7 +2,7 @@ import examifyImg from "@/assets/project-examify.jpg";
 import cinefillyImg from "@/assets/project-cinefilly.jpg";
 import tickventoImg from "@/assets/project-tickvento.jpg";
 import workstationImg from "@/assets/workstation.jpg";
-import portraitImg from "@/assets/portrait.jpg";
+import portraitImg from "@/assets/portrait.webp";
 
 export const images = {
   portrait: portraitImg,
