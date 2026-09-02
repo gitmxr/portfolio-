@@ -44,8 +44,7 @@ export function Footer() {
         </div>
 
         <p className="text-center text-xs text-muted-foreground">
-          © {new Date().getFullYear()} {profile.name}. Designed & built with React, TanStack Start,
-          and Tailwind CSS.
+          © {new Date().getFullYear()} {profile.name}
         </p>
       </div>
     </footer>
