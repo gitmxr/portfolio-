@@ -2,6 +2,7 @@ import { Download, ExternalLink, FileText } from "lucide-react";
 import { profile } from "@/lib/portfolio-data";
 import { SectionHeading } from "./SectionHeading";
 import { Reveal } from "./Reveal";
+import resumeUrl from "@/assets/Muhammad_Riaz_Resume.pdf";
 
 export function Resume() {
   return (
@@ -28,7 +29,7 @@ export function Resume() {
 
             <div className="flex flex-wrap items-center justify-center gap-3">
               <a
-                href="/Muhammad_Riaz_Resume.pdf"
+                href={resumeUrl}
                 download="Muhammad_Riaz_Resume.pdf"
                 className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground shadow-soft transition-all duration-300 hover:brightness-110"
               >
