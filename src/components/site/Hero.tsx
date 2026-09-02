@@ -49,7 +49,7 @@ export function Hero() {
           </span>
 
           <h1 className="display-heading mt-7 text-[clamp(2.6rem,7.6vw,5.2rem)]">
-            Crafting <span className="serif-accent text-primary">high-performance</span> full-stack
+            Crafting <span className="serif-accent text-primary whitespace-nowrap">high-performance</span> full-stack
             solutions
           </h1>
 
@@ -94,7 +94,7 @@ export function Hero() {
 
       <div className="pointer-events-none mt-10 select-none text-center">
         <span className="display-heading text-[clamp(2.5rem,9vw,7rem)] text-watermark">
-          I am {profile.shortName}
+          I am {profile.name}
         </span>
       </div>
     </section>

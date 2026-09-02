@@ -28,7 +28,8 @@ export function Resume() {
 
             <div className="flex flex-wrap items-center justify-center gap-3">
               <a
-                href="#contact"
+                href="/Muhammad_Riaz_Resume.pdf"
+                download="Muhammad_Riaz_Resume.pdf"
                 className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground shadow-soft transition-all duration-300 hover:brightness-110"
               >
                 <Download className="h-4 w-4" />
@@ -44,9 +45,6 @@ export function Resume() {
                 View on LinkedIn
               </a>
             </div>
-            <p className="text-xs tracking-[0.14em] uppercase text-muted-foreground">
-              PDF placeholder — upload your resume file to enable the download
-            </p>
           </div>
         </Reveal>
       </div>

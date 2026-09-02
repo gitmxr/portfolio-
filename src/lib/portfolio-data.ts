@@ -156,7 +156,7 @@ export const skillGroups = [
   {
     title: "Databases & Testing",
     caption: "Persistence layers and quality assurance",
-    items: ["MongoDB", "Mongoose", "SQL Server", "PostgreSQL", "Jest", "Vitest"],
+    items: ["MongoDB", "Mongoose", "SQL", "SQL Server", "PostgreSQL", "Jest", "Vitest"],
   },
   {
     title: "Tools & Cloud",
@@ -202,6 +202,12 @@ export const education = [
   {
     period: "2025",
     title: "AZ-104: Azure Administrator Associate",
+    org: "Microsoft",
+    note: "Certified",
+  },
+  {
+    period: "2026",
+    title: "AZ-900: Azure Fundamentals",
     org: "Microsoft",
     note: "Certified",
   },
