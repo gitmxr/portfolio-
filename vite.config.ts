@@ -8,6 +8,7 @@ import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
 export default defineConfig({
   vite: {
+    assetsInclude: ["**/*.glb"],
     server: {
       allowedHosts: [".ngrok-free.dev", "hastiest-brutely-faustina.ngrok-free.dev"],
     },

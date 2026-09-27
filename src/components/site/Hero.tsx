@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { ArrowRight } from "lucide-react";
 import { images, profile } from "@/lib/portfolio-data";
 import { CoffeeCup, LeafBranch } from "./Decor";
+import { ProfileLanyardCard } from "./LanyardCard";
 
 function useTypewriter(words: string[]) {
   const [index, setIndex] = useState(0);
@@ -36,21 +37,30 @@ export function Hero() {
   const typed = useTypewriter(profile.roles);
 
   return (
-    <section id="home" className="relative overflow-hidden pt-32 pb-20 sm:pt-40 lg:pb-28">
+    <section
+      id="home"
+      className="relative overflow-visible pt-32 pb-20 sm:pt-40 lg:pb-28 min-h-[640px] sm:min-h-[720px]"
+    >
       <div className="hero-glow pointer-events-none absolute inset-0 -z-10" />
       <LeafBranch className="pointer-events-none absolute -left-16 top-10 -z-10 h-[560px] w-[180px] text-decor opacity-70 sm:-left-6" />
       <CoffeeCup className="float-slow pointer-events-none absolute -right-10 top-24 -z-10 hidden h-[260px] w-[280px] text-decor opacity-70 lg:block" />
 
-      <div className="mx-auto grid max-w-6xl items-center gap-12 px-5 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16">
-        <div className="reveal is-visible">
+      {/* Full-width, full-height 3D Canvas across the whole Hero section */}
+      <div className="absolute inset-0 z-0 h-full w-full overflow-visible pointer-events-auto">
+        <ProfileLanyardCard frontImage={images.portrait} />
+      </div>
+
+      <div className="relative z-10 mx-auto grid max-w-6xl items-center gap-12 px-5 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16 pointer-events-none">
+        <div className="reveal is-visible pointer-events-auto">
           <span className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-4 py-2 text-[0.68rem] font-semibold tracking-[0.18em] uppercase shadow-soft">
             <span className="pulse-dot h-2 w-2 rounded-full bg-primary" />
             Available for opportunities
           </span>
 
           <h1 className="display-heading mt-7 text-[clamp(2.6rem,7.6vw,5.2rem)]">
-            Crafting <span className="serif-accent text-primary whitespace-nowrap">high-performance</span> full-stack
-            solutions
+            Crafting{" "}
+            <span className="serif-accent text-primary whitespace-nowrap">high-performance</span>{" "}
+            full-stack solutions
           </h1>
 
           <p className="serif-accent mt-6 text-xl text-primary sm:text-2xl">
@@ -79,17 +89,8 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="reveal is-visible relative mx-auto w-full max-w-md">
-          <div className="overflow-hidden rounded-[2rem] border border-border bg-card shadow-card">
-            <img
-              src={images.portrait}
-              alt={`${profile.name} — portfolio portrait`}
-              width={900}
-              height={1100}
-              className="h-full w-full object-cover"
-            />
-          </div>
-        </div>
+        {/* Right column placeholder for layout balance */}
+        <div className="h-[420px] sm:h-[500px] lg:h-[560px] pointer-events-none" />
       </div>
 
       <div className="pointer-events-none mt-10 select-none text-center">

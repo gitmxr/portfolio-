@@ -146,7 +146,16 @@ export const skillGroups = [
   {
     title: "Front-End",
     caption: "User interfaces and responsive designs",
-    items: ["React.js", "Next.js", "Redux", "Tailwind CSS", "IndexedDB", "Bootstrap", "HTML5", "CSS3"],
+    items: [
+      "React.js",
+      "Next.js",
+      "Redux",
+      "Tailwind CSS",
+      "IndexedDB",
+      "Bootstrap",
+      "HTML5",
+      "CSS3",
+    ],
   },
   {
     title: "Back-End",
